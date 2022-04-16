@@ -16,3 +16,74 @@ Template repository for my open source Go projects.
 1. Replace the `lib` and `lib_test` package names with the name of the package.
 1. Replace the `lib.go` and `lib_test.go` file names with the name of the package.
 1. Replace the `cmd/app` directory name with the name of the binary, if any.
+
+## CI
+
+- [ ] Has golangci-lint v1.45.2 passing
+- [ ] Uses the 'central' linter config
+- [ ] Runs tests with the race detector
+- [ ] Runs integration tests, if applicable
+- [ ] Runs formatting against all markdown docs in the repo, and adds a commit instead of failing silently.
+- [ ] Reports coverage to coveralls
+- [ ] Code scanning with CodeQL
+
+## Community Standards
+
+- [ ] Description w/ tags
+- [ ] README
+- [ ] Code of conduct
+- [ ] Contributing guideline
+- [ ] License
+- [ ] Issue template(s)
+- [ ] Pull request template
+
+- [ ] CODEOWNERS
+
+## GitHub settings
+
+- [ ] Social media image
+- [ ] Wiki pages **disabled**
+- [ ] Sponsorship **enabled**
+- [ ] Projects **disabled** (my OSS work is managed in a [central project board](https://github.com/users/kinbiko/projects/8))
+- [ ] GitHub archive program **enabled**
+- [ ] Discussions **disabled**
+- [ ] Merge commits **disabled**
+- [ ] Squash merging **enabled**
+- [ ] Rebase merging **disabled**
+- [ ] Suggest updating branches **enabled**
+- [ ] Auto-merge **disabled**
+- [ ] Auto-delete head branches **enabled**
+- [ ] Limit "approve" or "request changes" to users with explicit permissions
+- [ ] Default branch is `main`, with the following branch protection rules **enabled** (everything else disabled):
+  - [ ] Require PRs before merging (no approvals required, don't dismiss PR approvals on new commits, don't require codeowner review)
+  - [ ] Signed commits requirement **enabled** (assumption: squash merges via GitHub UI are signed)
+  - [ ] Linear history **enabled** (assumption: only enabling squash merges globally means linear history in default branch)
+- [ ] Allow kinbiko and select non-kinbiko actions only:
+  - [ ] Allow actions created by GitHub **enabled**
+  - [ ] Allow actions by Marketplace verified creators **enabled**
+  - [ ] `shogo82148/actions-goveralls@v1` added as allowed action
+- [ ] Require approval before running actions for first-time contributors
+- [ ] GitHub actions approving PRs **disabled**
+- [ ] Dependabot alerts **enabled** for security vulns
+- [ ] Dependabot updates **enabled** for security vulns
+- [ ] Code scanning (CodeQL) **enabled**
+- [ ] Consistent labels:
+  - `enhancement`
+  - `documentation`
+  - `bug`
+  - `good first issue`
+  - `help wanted`
+  - `question`
+
+## README
+
+- [ ] Has tags:
+  - [ ] Build status
+  - [ ] Coverage percentage
+  - [ ] Go report link
+  - [ ] Latest version
+  - [ ] Godoc with link to pkg.go.dev
+  - [ ] License tag
+- [ ] Explains the _why_ and then the _what_.
+- [ ] Usage information incl any installation guidelines
+- [ ] Link to docs
