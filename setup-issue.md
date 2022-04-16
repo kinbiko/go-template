@@ -51,9 +51,10 @@ This document serves as both a list of all the rules and steps to set up a very 
 - [ ] Dependabot updates **enabled** for security vulns
 - [ ] Code scanning (CodeQL) **enabled**
 - [ ] Consistent labels:
-  - `enhancement`
-  - `documentation`
   - `bug`
+  - `dependencies`
+  - `documentation`
+  - `enhancement`
   - `good first issue`
   - `help wanted`
   - `question`
