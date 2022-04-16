@@ -12,6 +12,8 @@ gh issue create --assignee '@me' --body-file setup-file.md --title "Repository s
 
 git checkout -b fill-in-template
 
+rm setup-issue.md
+
 # Basically gets the name of the repo
 pkgname = `basename "$PWD"`
 

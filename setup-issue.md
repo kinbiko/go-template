@@ -41,7 +41,6 @@ This document serves as both a list of all the rules and steps to set up a very 
 - [ ] Limit "approve" or "request changes" to users with explicit permissions
 - [ ] Default branch is `main`, with the following branch protection rules **enabled** (everything else disabled):
   - [ ] Require PRs before merging (no approvals required, don't dismiss PR approvals on new commits, don't require codeowner review)
-  - [ ] Signed commits requirement **enabled** (assumption: squash merges via GitHub UI are signed)
   - [ ] Linear history **enabled** (assumption: only enabling squash merges globally means linear history in default branch)
 - [ ] Allow kinbiko and select non-kinbiko actions only:
   - [ ] Allow actions created by GitHub **enabled**
