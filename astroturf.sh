@@ -50,4 +50,4 @@ git commit -m "chore: run fill in template" -m "Automated with astroturf.sh (see
 git push -u origin fill-in-template
 
 gh pr create --fill
-gh pr view --web
+gh pr merge --delete-branch --squash
