@@ -21,7 +21,6 @@ This document serves as both a list of all the rules and steps to set up a very 
 - [x] License
 - [x] Issue template(s)
 - [ ] Pull request template
-
 - [ ] CODEOWNERS
 
 ## GitHub settings

@@ -8,14 +8,14 @@
 
 set -e
 
-gh issue create --assignee '@me' --body-file setup-file.md --title "Repository setup"
+gh issue create --assignee '@me' --body-file setup-issue.md --title "Repository setup"
 
 git checkout -b fill-in-template
 
 rm setup-issue.md
 
 # Basically gets the name of the repo
-pkgname = `basename "$PWD"`
+pkgname=`basename "$PWD"`
 
 # These sed commands won't work on linux -- assumes the MacOS version 'sed'.
 # Replace
@@ -35,7 +35,8 @@ mv lib.go ${pkgname}.go
 mv lib_test.go ${pkgname}_test.go
 
 # Replace the cmd/app directory name with pkgname.
-mv cmd/app cmd/${pkgname}
+cp -a cmd/app cmd/$pkgname
+rm cmd/app
 
 # Add the binary name to the gitignore
 echo "" >> .gitignore
