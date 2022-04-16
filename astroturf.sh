@@ -35,8 +35,7 @@ mv lib.go ${pkgname}.go
 mv lib_test.go ${pkgname}_test.go
 
 # Replace the cmd/app directory name with pkgname.
-cp -a cmd/app cmd/$pkgname
-rm -r cmd/app
+mv cmd/app cmd/$pkgname
 
 # Add the binary name to the gitignore
 echo "" >> .gitignore
@@ -46,7 +45,7 @@ echo "$pkgname" >> .gitignore
 # Delete this script -- it continues to run because magic
 rm astroturf.sh
 
-git add .
+git add -A
 git commit -m "chore: run fill in template" -m "Automated with astroturf.sh (see commit diff)"
 git push -u origin fill-in-template
 
