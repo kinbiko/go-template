@@ -5,10 +5,8 @@ This document serves as both a list of all the rules and steps to set up a very 
 ## CI
 
 - [x] Has golangci-lint v1.45.2 passing
-- [ ] Uses the 'central' linter config
 - [x] Runs tests with the race detector
 - [x] Runs integration tests, if applicable
-- [ ] Runs formatting against all markdown docs in the repo, and adds a commit instead of failing silently.
 - [x] Reports coverage to coveralls
 - [x] Code scanning with CodeQL
 
@@ -20,12 +18,11 @@ This document serves as both a list of all the rules and steps to set up a very 
 - [x] Contributing guideline
 - [x] License
 - [x] Issue template(s)
-- [ ] Pull request template
-- [ ] CODEOWNERS
+- [x] Pull request template
+- [x] CODEOWNERS
 
 ## GitHub settings
 
-- [ ] Social media image
 - [ ] Wiki pages **disabled**
 - [ ] Sponsorship **enabled**
 - [ ] Projects **disabled** (my OSS work is managed in a [central project board](https://github.com/users/kinbiko/projects/8))
