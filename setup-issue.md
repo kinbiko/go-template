@@ -4,6 +4,7 @@ This document serves as both a list of all the rules and steps to set up a very 
 
 ## CI
 
+- [x] Builds against one of the 2 latest Go versions
 - [x] Has golangci-lint v1.45.2 passing
 - [x] Runs tests with the race detector
 - [x] Runs integration tests, if applicable
