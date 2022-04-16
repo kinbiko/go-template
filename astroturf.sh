@@ -6,8 +6,9 @@
 #
 # This script does a bunch of setup that the GitHub template cannot do on its own.
 
-```
 set -e
+
+gh issue create --assignee '@me' --body-file setup-file.md --title "Repository setup"
 
 git checkout -b fill-in-template
 
@@ -48,4 +49,3 @@ git push -u origin fill-in-template
 
 gh pr create --fill
 gh pr view --web
-```
