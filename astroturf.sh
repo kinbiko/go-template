@@ -8,7 +8,7 @@
 
 set -e
 
-gh issue create --assignee '@me' --body-file setup-file.md --title "Repository setup"
+gh issue create --assignee '@me' --body-file setup-issue.md --title "Repository setup"
 
 git checkout -b fill-in-template
 
