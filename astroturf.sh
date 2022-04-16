@@ -36,7 +36,7 @@ mv lib_test.go ${pkgname}_test.go
 
 # Replace the cmd/app directory name with pkgname.
 cp -a cmd/app cmd/$pkgname
-rm cmd/app
+rm -r cmd/app
 
 # Add the binary name to the gitignore
 echo "" >> .gitignore
